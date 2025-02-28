@@ -1,7 +1,5 @@
-function fibonacci(count, n1 = 0, n2 = 1) {
-	console.log("This was printed recursively!");
-	if (count == 0) return "";
-	return n1 + ", " + fibonacci(count - 1, n2, n1 + n2);
+function fib(c, n1 = 0, n2 = 1) {
+	if (c == 0) return "";
+	return (c == 1 ? n1 : `${n1}, `) + fib(c - 1, n2, n1 + n2);
 }
-
-console.log(fibonacci(8));
+console.log(fib(8));
