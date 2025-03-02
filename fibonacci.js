@@ -6,13 +6,11 @@ function fib(n) {
 	while (count !== 0) {
 		count--;
 		arr.push(n1);
-		console.log(n1, n2);
-		let c2 = n2;
-		let c1 = n1;
+		let current = n1;
 		n1 = n2;
-		n2 = c1 + c2;
+		n2 = current + n2;
 	}
-	console.log(arr.join(", "));
+	return arr.join(", ");
 }
 
 function fibRec(c, n1 = 0, n2 = 1) {
@@ -20,4 +18,9 @@ function fibRec(c, n1 = 0, n2 = 1) {
 	return (c == 1 ? n1 : `${n1}, `) + fibRec(c - 1, n2, n1 + n2);
 }
 
-console.log("Iterative Version: \n" + fib(8));
+console.log("\nFibonacci\n");
+console.log("Iterative Version:");
+console.log(fib(8));
+console.log("\nRecursive Version:");
+console.log(fibRec(8));
+console.log("\n");
