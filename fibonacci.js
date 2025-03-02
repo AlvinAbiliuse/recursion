@@ -17,9 +17,9 @@ function fibRec(c, n1 = 0, n2 = 1) {
 	let arr = [];
 
 	if (c == 0) return arr;
-	arr.push(n1);
+	arr.concat(n1);
 	fibRec(c - 1, n2, n2 + n1);
-
+	return arr.concat(n1).concat(fibRec(c - 1, n2, n1 + n2));
 	/*
 	if (c == 0) return "";
 	return (c == 1 ? n1 : `${n1}, `) + fibRec(c - 1, n2, n1 + n2);
