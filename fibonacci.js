@@ -6,8 +6,11 @@ function fib(n) {
 	while (count !== 0) {
 		count--;
 		arr.push(n1);
+		console.log(n1, n2);
+		let c2 = n2;
+		let c1 = n1;
 		n1 = n2;
-		n2 = n1 + n2;
+		n2 = c1 + c2;
 	}
 	console.log(arr.join(", "));
 }
@@ -18,4 +21,3 @@ function fibRec(c, n1 = 0, n2 = 1) {
 }
 
 console.log(fib(8));
-console.log(fibRec(8));
