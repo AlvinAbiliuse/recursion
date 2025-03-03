@@ -34,10 +34,8 @@ let sortArr = [
 let sortArr2 = [4, 5, 6, 8, 2, 1, 3, 9, 0, 7];
 
 console.log("\n\n");
-// console.log(sortArr);
-// console.log(
-//bubbleSort(sortArr);
-// );
+console.log(sortArr);
+console.log(bubbleSort(sortArr));
 console.log("\n\n");
 console.log(sortArr2);
 console.log(bubbleSort(sortArr2));
