@@ -29,17 +29,18 @@ function mergeSort(arr) {
 	1, 142, 153, 15, 95, 4, 421, 124, 65, 86, 45, 7436, 53, 87, 24, 423, 754, 87,
 	1,
 ]
-*/
 
-// let sortArr2 = [4, 5, 6, 8, 2, 1, 3, 9, 0, 7];
+let sortArr2 = [4, 5, 6, 8, 2, 1, 3, 9, 0, 7];
+
+*/
 
 let sortArr = [3, 2, 1, 13, 8, 5, 0, 1];
 
 let sortArr2 = [105, 79, 100, 110];
 
 console.log("\n\n");
-console.log(sortArr);
-console.log(mergeSort(sortArr));
+// console.log(sortArr);
+// console.log(mergeSort(sortArr));
 console.log("\n\n");
 console.log(sortArr2);
 console.log(mergeSort(sortArr2));
