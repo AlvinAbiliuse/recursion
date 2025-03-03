@@ -1,7 +1,6 @@
 function merge(left, right) {
 	let c = 0;
 	let j = 0;
-	let k = 0;
 	let mergedArr = [];
 	while (c !== left.length || j !== right.length) {
 		if (c == left.length) {
@@ -32,7 +31,11 @@ function mergeSort(arr) {
 ]
 */
 
-let sortArr2 = [4, 5, 6, 8, 2, 1, 3, 9, 0, 7];
+// let sortArr2 = [4, 5, 6, 8, 2, 1, 3, 9, 0, 7];
+
+let sortArr = [3, 2, 1, 13, 8, 5, 0, 1];
+
+let sortArr2 = [105, 79, 100, 110];
 
 console.log("\n\n");
 console.log(sortArr);
