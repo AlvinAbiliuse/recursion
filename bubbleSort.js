@@ -3,22 +3,23 @@ function merge(left, right) {
 	let j = 0;
 	let k = 0;
 	let mergedArr = [];
-	while (left.length !== 0 || right.length !== 0) {
+	while (left.length > 0 && right.length > 0) {
+		console.log(left[0], right[0]);
 		if (left[0] < right[0]) {
 			mergeArr.push(left.shift());
 		} else {
 			mergeArr.push(right.shift());
 		}
-		if (left.length !== 0) {
-			mergeArr.push(left.shift());
-		} else if (right.length !== 0) {
-			mergeArr.push(right.shift());
-		}
+	}
+	if (left.length !== 0) {
+		mergeArr.push(left.shift());
+	} else if (right.length !== 0) {
+		mergeArr.push(right.shift());
 	}
 	return mergedArr;
 }
 
-function bubbleSort(arr, arr2 = []) {
+function bubbleSort(arr) {
 	if ((arr.length = 1)) return arr;
 	let halfway = Math.floor(arr.length / 2);
 
@@ -32,11 +33,11 @@ let sortArr = [
 	1,
 ];
 
-let sortArr2 = [1, 5, 6, 8, 2, 4, 3, 9, 0, 7];
+let sortArr2 = [4, 5, 6, 8, 2, 1, 3, 9, 0, 7];
 
 console.log("\n\n");
-console.log(sortArr);
+// console.log(sortArr);
 console.log(bubbleSort(sortArr));
 console.log("\n\n");
-console.log(sortArr2);
+// console.log(sortArr2);
 console.log(bubbleSort(sortArr2));
