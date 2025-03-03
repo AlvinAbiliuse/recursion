@@ -17,11 +17,11 @@ function merge(left, right) {
 }
 
 function mergeSort(arr) {
-	if (arr.length === 1) return arr;
+	if (arr.length < 2) return arr;
 	let halfway = Math.floor(arr.length / 2);
 
 	let lh = mergeSort(arr.slice(0, halfway));
-	let rh = mergeSort(arr.slice(halfway, arr.length));
+	let rh = mergeSort(arr.slice(halfway + 1, arr.length));
 	return merge(lh, rh);
 }
 
@@ -39,8 +39,8 @@ let sortArr = [3, 2, 1, 13, 8, 5, 0, 1];
 let sortArr2 = [105, 79, 100, 110];
 
 console.log("\n\n");
-// console.log(sortArr);
-// console.log(mergeSort(sortArr));
+console.log(sortArr);
+console.log(mergeSort(sortArr));
 console.log("\n\n");
 console.log(sortArr2);
 console.log(mergeSort(sortArr2));
