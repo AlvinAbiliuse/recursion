@@ -55,3 +55,5 @@ console.log(mergeSort(sortArr2));
 endTime = new Date();
 console.log(`\nTime Elapsed: ${endTime.getTime() - startTime.getTime()} ms`);
 console.log("\n\n");
+
+export { mergeSort };
