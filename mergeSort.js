@@ -1,9 +1,7 @@
 function merge(left, right) {
-	let c = 0;
-	let j = 0;
-	let k = left.length + right.length;
+	let total = left.length + right.length;
 	let mergedArr = [];
-	for (let i = 0; i < k; i++) {
+	for (let i = 0; i < total; i++) {
 		if (left[0] <= right[0]) {
 			mergedArr.push(left.shift());
 		} else if (right[0] < left[0]) {
