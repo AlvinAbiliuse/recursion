@@ -40,3 +40,5 @@ console.log(
 	(new Date().getTime() - recursiveTime) / 1000
 );
 console.log("\n");
+
+export { fib, fibRec };
